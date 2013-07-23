@@ -16,7 +16,7 @@ describe SumMultiples do
 			sum_of_multiples_of(5, max).should eq expect
 		end
 	end
-	{3 => 0, 5 => 3, 6 => 8, 15 => 45, 16 => 60}.each do |max, expect|
+	{3 => 0, 5 => 3, 6 => 8, 15 => 45, 16 => 60, 1000 => 233168}.each do |max, expect|
 		it "return expect for sum of multiples of 3 and 5 below max" do
 			sum = SumMultiples.new
 			total = sum.multiples_of_3_and_5 max
